@@ -17,8 +17,8 @@ app.use(express.urlencoded({extended:false}));
 //////////////////////////////////////////////////////
 // SETUP ROUTES
 //////////////////////////////////////////////////////
-// const mainRoutes = require('./routes/mainRoutes');
-// app.use("/", mainRoutes);
+const mainRoutes = require('./routes/mainRoutes');
+app.use("/", mainRoutes);
 
 //////////////////////////////////////////////////////
 // EXPORT APP
