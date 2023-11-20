@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "selectAll",
+      "setup": "npm install",
+      "run": "npx jest -t 'selectAll should call pool.query' --forceExit",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "selectById ",
+      "setup": "npm install",
+      "run": "npx jest -t 'selectById should call pool.query' --forceExit",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "insertSingle ",
+      "setup": "npm install",
+      "run": "npx jest -t 'insertSingle should call pool.query' --forceExit",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "updateById ",
+      "setup": "npm install",
+      "run": "npx jest -t 'updateById should call pool.query' --forceExit",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "deleteById",
+      "setup": "npm install",
+      "run": "npx jest -t 'deleteById should call pool.query' --forceExit",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    }
+  ]
+}
