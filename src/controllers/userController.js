@@ -40,7 +40,7 @@ module.exports.readUserById = (req, res, next) => {
 module.exports.createNewUser = (req, res, next) => {
     if(req.body.username == undefined || req.body.email == undefined)
     {
-        res.status(400).send("Error: username is undefined");
+        res.status(400).send("Error: username or email is undefined");
         return;
     }
 

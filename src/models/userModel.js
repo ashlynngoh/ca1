@@ -13,7 +13,7 @@ module.exports.selectById = (data, callback) =>
 {
     const SQLSTATMENT = `
     SELECT * FROM User
-    WHERE id = ?;
+    WHERE user_id = ?;
     `;
     const VALUES = [data.id];
 
@@ -36,7 +36,7 @@ module.exports.updateById = (data, callback) =>
     const SQLSTATMENT = `
     UPDATE User 
     SET username = ?, email = ?
-    WHERE id = ?;
+    WHERE user_id = ?;
     `;
     const VALUES = [data.username, data.email, data.id];
 
@@ -48,7 +48,7 @@ module.exports.deleteById = (data, callback) =>
 {
     const SQLSTATMENT = `
     DELETE FROM User 
-    WHERE id = ?;
+    WHERE user_id = ?;
 
     ALTER TABLE User AUTO_INCREMENT = 1;
     `;
