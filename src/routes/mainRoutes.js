@@ -5,10 +5,10 @@ const router = express.Router();
 // const pokedexRoutes = require('./pokedexRoutes');
 // const pokemonRoutes = require('./pokemonRoutes');
 const userRoutes = require('./userRoutes');
+const taskRoutes = require('./taskRoutes');
 
-// router.use("/pokemon", pokemonRoutes);
-// router.use("/pokedex", pokedexRoutes);
-// router.use("/player", playerRoutes);
+
 router.use("/user", userRoutes);
+router.use("/task", taskRoutes);
 
 module.exports = router;
